@@ -20,11 +20,11 @@ designated moderators or bots.
 ## Quick Start
 
 1. **Install the plugin** (choose one method):
-    - Download the `.mbp` file from the [releases page](https://github.com/tcpipuk/maubot-redactor/releases).
+    - Download the `.mbp` file from the [releases page](https://git.cisnt.uk/morgan/maubot-redactor/releases).
     - Build from source:
 
         ```bash
-        git clone https://github.com/tcpipuk/maubot-redactor
+        git clone https://git.cisnt.uk/morgan/maubot-redactor
         cd maubot-redactor
         zip -r maubot-redactor.mbp redactor/ maubot.yaml base-config.yaml
         ```

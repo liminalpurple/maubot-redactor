@@ -5,13 +5,13 @@ description = "A Maubot plugin that automatically redacts messages from users ba
 readme = "README.md"
 requires-python = ">=3.13"
 license = "AGPL-3.0-or-later"
-authors = [{ name = "Tom Foster", email = "tom@tcpip.uk" }]
-maintainers = [{ name = "Tom Foster", email = "tom@tcpip.uk" }]
+authors = [{ name = "Morgan", email = "morgan@cisnt.uk" }]
+maintainers = [{ name = "Morgan", email = "morgan@cisnt.uk" }]
 dependencies = ["maubot>=0.5.1"]
 
 [project.urls]
-"Homepage" = "https://github.com/tcpipuk/maubot-redactor"
-"Bug Tracker" = "https://github.com/tcpipuk/maubot-redactor/issues"
+"Homepage" = "https://git.cisnt.uk/morgan/maubot-redactor"
+"Bug Tracker" = "https://git.cisnt.uk/morgan/maubot-redactor/issues"
 
 [build-system]
 requires = ["hatchling"]
