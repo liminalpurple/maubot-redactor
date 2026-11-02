@@ -25,6 +25,8 @@ jobs:
       - name: Prepare uv
         uses: astral-sh/setup-uv@v5
         with:
+          # The lock targets 3.13; newer runner Pythons have no wheels for some pinned deps
+          python-version: "3.13"
           enable-cache: true
           cache-dependency-glob: |
             **/pyproject.toml
