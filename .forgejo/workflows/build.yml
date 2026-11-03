@@ -27,6 +27,9 @@ jobs:
         with:
           # The lock targets 3.13; newer runner Pythons have no wheels for some pinned deps
           python-version: "3.13"
+          # Later steps run mbc and ruff from the venv, which setup-uv only activates
+          # when asked from v6 onwards
+          activate-environment: true
           enable-cache: true
           cache-dependency-glob: |
             **/pyproject.toml
@@ -34,7 +37,7 @@ jobs:
 
       - name: Run tests and build plugin
         run: |
-          # Install dependencies (setup-uv has already created and activated .venv)
+          # Install dependencies into the .venv setup-uv created and activated
           uv sync --active --dev --no-install-project
           # Lint with ruff
           echo "## Ruff Check Issues" >> $GITHUB_STEP_SUMMARY
