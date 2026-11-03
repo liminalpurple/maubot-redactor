@@ -20,10 +20,10 @@ jobs:
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Prepare uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v10.3.3
         with:
           # The lock targets 3.13; newer runner Pythons have no wheels for some pinned deps
           python-version: "3.13"
