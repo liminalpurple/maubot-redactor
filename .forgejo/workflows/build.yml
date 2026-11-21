@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Prepare uv
-        uses: astral-sh/setup-uv@v10.3.3
+        uses: astral-sh/setup-uv@v10.4.0
         with:
           # The lock targets 3.13; newer runner Pythons have no wheels for some pinned deps
           python-version: "3.13"
